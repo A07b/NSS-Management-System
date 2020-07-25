@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="studrep" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2c463b1a-98c6-46c4-9eba-02150d0fc0aa">
+	<property name="ireport.zoom" value="1.0000000000000062"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select * from Student;]]>
+	</queryString>
+	<field name="E_Id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="S_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Gender" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DOB" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Class" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Nu_no" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Ph_no" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Email" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Adh_no" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Weight" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Height" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Par_nm" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Addr" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Pinc" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Image" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="blgrp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="S_Year" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="802" height="79" uuid="03a18b89-9299-4f58-a1b8-af6beef6deb1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Lucida Sans" size="34" isBold="true" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[STUDENTS REPORT's]]></text>
+			</staticText>
+			<image>
+				<reportElement x="715" y="0" width="106" height="79" uuid="0a0bccb4-0535-4825-8be8-10f06257a618"/>
+				<imageExpression><![CDATA["C:\\Users\\LENOVO\\Desktop\\acacs.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="0" y="1" width="105" height="78" uuid="415a8e9b-a397-4872-8782-68b02a1452b5"/>
+				<imageExpression><![CDATA["C:\\Users\\LENOVO\\Desktop\\NSS-logo.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="7" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="73" splitType="Stretch">
+			<staticText>
+				<reportElement x="20" y="41" width="100" height="20" uuid="68a8aeae-78d6-4063-9d9c-fc7858128b61"/>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida Sans" size="16" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="153" y="41" width="100" height="20" uuid="b719518b-2236-4d93-a5a7-0a373f9b88de"/>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida Sans" size="16" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[ Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="288" y="41" width="100" height="20" uuid="3ef31548-cba1-4879-93d1-ef3e16d0ed7e"/>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida Sans" size="16" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Gender]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="72" width="802" height="1" uuid="6492acd4-fb4c-456e-89f9-3bec2492c666"/>
+			</line>
+			<line>
+				<reportElement x="136" y="15" width="1" height="57" uuid="27218d81-db82-4efc-9e7a-da9fbfd47e7c"/>
+			</line>
+			<line>
+				<reportElement x="0" y="15" width="802" height="1" uuid="de60e402-41a7-4800-9a56-6fb3f48d0adc"/>
+			</line>
+			<staticText>
+				<reportElement x="418" y="41" width="100" height="20" uuid="75d38396-f9fe-488a-836e-9372b780a04d"/>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida Sans" size="16" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Addm. Yr]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="557" y="41" width="100" height="20" uuid="42f7fbaf-77cd-4826-b3ed-ba019e228bfd"/>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida Sans" size="16" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Class]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="697" y="41" width="100" height="20" uuid="6248a5cd-88e2-4a3c-b5e4-b2ea547eec98"/>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida Sans" size="16" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Phone]]></text>
+			</staticText>
+			<line>
+				<reportElement x="680" y="16" width="1" height="57" uuid="89615bfb-826d-4f3d-a86d-068f85b82671"/>
+			</line>
+			<line>
+				<reportElement x="541" y="16" width="1" height="57" uuid="d3dc8525-a318-4c64-a335-c0ce7a6f2f4c"/>
+			</line>
+			<line>
+				<reportElement x="405" y="15" width="1" height="57" uuid="9000b386-561b-4cdd-92c2-33aca115838d"/>
+			</line>
+			<line>
+				<reportElement x="275" y="16" width="1" height="57" uuid="e54a8eb7-11ea-4daa-b41d-48c063561bf9"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="58" splitType="Stretch">
+			<textField>
+				<reportElement x="20" y="9" width="100" height="31" uuid="3dd95a71-d09b-47f3-aede-aa5b4cd2a93e"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Lucida Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{E_Id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="153" y="9" width="100" height="31" uuid="9f717685-35f2-40af-b6c1-efc703f56af0"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Lucida Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{S_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="288" y="9" width="100" height="31" uuid="0c9593b6-02c7-4125-ba44-9a001f641ad1"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Lucida Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Gender}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="418" y="9" width="100" height="31" uuid="b98b54b6-9071-4456-b0b9-9398878b9206"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Lucida Sans" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{S_Year}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="57" width="802" height="1" uuid="2b2e1908-f158-4e4b-9bc6-9b0736a14c8d"/>
+			</line>
+			<line>
+				<reportElement x="136" y="0" width="1" height="57" uuid="4e8b37a9-c5a3-4038-8841-b86c9be11172"/>
+			</line>
+			<textField>
+				<reportElement x="557" y="9" width="100" height="31" uuid="97ab1899-b365-42b7-b95e-5d0f834e3b9f"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Lucida Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Class}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="275" y="0" width="1" height="57" uuid="a76934a3-0933-46df-8ee6-37521a908cbd"/>
+			</line>
+			<line>
+				<reportElement x="405" y="0" width="1" height="57" uuid="61d7ba37-9fa6-4477-aec2-990a32432722"/>
+			</line>
+			<line>
+				<reportElement x="541" y="0" width="1" height="57" uuid="66f35298-609b-4dbe-a4c1-84cc315b627e"/>
+			</line>
+			<textField>
+				<reportElement x="697" y="9" width="100" height="31" uuid="87cd611d-8580-4a06-8418-14211754e761"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Lucida Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Ph_no}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="680" y="0" width="1" height="57" uuid="912caafa-7dd2-4d98-9117-ddf7824107c5"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="18" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="41" splitType="Stretch">
+			<textField>
+				<reportElement x="288" y="13" width="230" height="20" uuid="1f6a26d5-fdf6-4bfc-86f3-5fda67418afb"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="136" splitType="Stretch">
+			<staticText>
+				<reportElement x="650" y="62" width="152" height="23" uuid="0d46a16c-1401-4282-9185-e64438912a80"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Lucida Sans" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Principal ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="650" y="85" width="152" height="23" uuid="705f7829-65f4-482a-a66e-8ff586607c25"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Lucida Sans" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Of ACACS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="650" y="108" width="152" height="23" uuid="552180fd-3a0e-4552-b93f-8e45ec488e13"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Lucida Sans" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[( Name Of Principal )]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

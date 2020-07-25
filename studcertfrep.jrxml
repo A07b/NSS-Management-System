@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="studcertfrep" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="aefb5b7f-af54-48b3-8f04-aa1b1a735a48">
+	<property name="ireport.zoom" value="0.6209213230591564"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select * from Stud_Task;]]>
+	</queryString>
+	<field name="T_No" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="S_No" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="T_Name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="S_Name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Class" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="T_DUr" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="A_No" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="99" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="433" splitType="Stretch">
+			<image scaleImage="RetainShape" hAlign="Center" vAlign="Middle" isUsingCache="true">
+				<reportElement mode="Transparent" x="0" y="0" width="802" height="423" backcolor="#FFFFFF" uuid="b1ba5d78-805b-4ecc-b0bd-22ec1e7da027"/>
+				<imageExpression><![CDATA["C:\\Users\\LENOVO\\Desktop\\Certificate_1.jpg"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="266" y="271" width="269" height="20" uuid="93995327-13d3-4259-bc17-30e02061f2f2"/>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida Sans" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{T_Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="266" y="209" width="269" height="20" uuid="e148a4e6-560a-4670-b366-bc0b25de1291"/>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida Sans" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{S_Name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="650" y="395" width="152" height="23" uuid="32042894-3179-4bcd-9491-c0224f39a444"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Lucida Sans" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[( Name Of Principal )]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="650" y="372" width="152" height="23" uuid="c21b1faf-3cc3-4fe5-8acc-7ca87c124d57"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Lucida Sans" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Of ACACS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="650" y="349" width="152" height="23" uuid="6c46dee5-2cbe-410c-9387-7319c9549ec8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Lucida Sans" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Principal ]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="12" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="2" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
